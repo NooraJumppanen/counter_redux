@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	background-color: rgb(82, 197, 197);
+	height: 15vh;
+	font-size: 3em;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+	min-height: 75vh;
+	background-color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+	background-color: rgb(82, 197, 197);
+	height: 10vh;
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circle {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	outline: 5px solid lightgray;
+	outline-offset: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgray;
+	font-size: 3rem;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.even {
+	background-color: pink;
+	outline: 5px solid pink;
 }
 
-.App-link {
-  color: #61dafb;
+.odd {
+	background-color: rgb(235, 177, 186);
+	outline: 5px solid rgb(235, 177, 186);
+}
+.circlewrapper {
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+	padding: 1rem 2rem 1rem 2rem;
+	margin: 1rem;
+	background-color: rgb(95, 224, 224);
+	border: none;
+	box-shadow: 7px 7px lightgray;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5rem;
+}
+
+button:hover {
+	background-color: rgb(72, 175, 175);
+}
+
+.buttonsarea {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
