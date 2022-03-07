@@ -2,10 +2,6 @@ import * as actionTypes from './actions';
 
 const initialState = {
 	counter: 0,
-	// filters: {
-	// 	status: 'even',
-	// 	color: 'pink',
-	// },
 };
 
 const reducer = (state = initialState, action) => {
