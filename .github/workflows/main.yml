@@ -11,5 +11,5 @@ jobs:
       - name: Install
         run: npm install
 
-      - name: Start
-        run: npm start
+      - name: Test
+        run: npm test
