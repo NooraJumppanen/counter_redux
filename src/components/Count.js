@@ -11,17 +11,20 @@ const Count = () => {
 	const addOneHandler = () => {
 		dispatch({
 			type: actionTypes.ADD_ONE,
+			payload: 1,
 		});
 	};
 	const addFiveHandler = () => {
 		dispatch({
 			type: actionTypes.ADD_FIVE,
+			payload: 5,
 		});
 	};
 	const removeOneHandler = () => {
 		if (number !== 0) {
 			dispatch({
 				type: actionTypes.REMOVE_ONE,
+				payload: 1,
 			});
 		}
 	};
@@ -29,6 +32,7 @@ const Count = () => {
 		if (number !== 0) {
 			dispatch({
 				type: actionTypes.REMOVE_FIVE,
+				payload: 5,
 			});
 		}
 	};

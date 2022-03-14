@@ -9,22 +9,22 @@ const reducer = (state = initialState, action) => {
 		case actionTypes.ADD_ONE:
 			return {
 				...state,
-				counter: state.counter + 1,
+				counter: state.counter + action.payload,
 			};
 		case actionTypes.ADD_FIVE:
 			return {
 				...state,
-				counter: state.counter + 5,
+				counter: state.counter + action.payload,
 			};
 		case actionTypes.REMOVE_ONE:
 			return {
 				...state,
-				counter: state.counter - 1,
+				counter: state.counter - action.payload,
 			};
 		case actionTypes.REMOVE_FIVE:
 			return {
 				...state,
-				counter: state.counter - 5,
+				counter: state.counter - action.payload,
 			};
 		case actionTypes.RESET:
 			return {
